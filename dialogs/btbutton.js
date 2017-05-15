@@ -121,43 +121,8 @@ CKEDITOR.dialog.add('btbutton', function (editor) {
                 elements: [
                     {
                         type: "hbox",
-                        widths: ["50%", "50%"],
+                        widths: ["100%"],
                         children: [
-                            {
-                                type: 'vbox',
-                                children: [
-                                    {
-                                        type: 'html',
-                                        html: '<strong>Bootstrap Glyphicon</strong>' +
-                                        '<p><a href="http://getbootstrap.com/components/#glyphicons" target="_blank" style="padding: 0px; vertical-align: top;">List of Icons</a></p><br/>' +
-                                        '<p>e.g. <em>glyphicon-pencil</em></p>'
-                                    },
-                                    {
-                                        id: 'bsiconleft',
-                                        type: 'text',
-                                        width: '150px',
-                                        label: 'Left Icon',
-                                        setup: function (widget) {
-                                            this.setValue(widget.data.bsiconleft || '');
-                                        },
-                                        commit: function (widget) {
-                                            widget.setData('bsiconleft', this.getValue());
-                                        }
-                                    },
-                                    {
-                                        id: 'bsiconright',
-                                        type: 'text',
-                                        width: '150px',
-                                        label: 'Right Icon',
-                                        setup: function (widget) {
-                                            this.setValue(widget.data.bsiconright || '');
-                                        },
-                                        commit: function (widget) {
-                                            widget.setData('bsiconright', this.getValue());
-                                        }
-                                    }
-                                ]
-                            },
                             {
                                 type: 'vbox',
                                 children: [
